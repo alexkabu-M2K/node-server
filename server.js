@@ -7,11 +7,13 @@ const PORT = 3333;
 // Criando servidor
 const server = http.createServer((request, response) => {
 
-  const url = request.url;
+  const {url, method} = request;
 
-  response.setHeader('Content-Type', 'text/plain');
+  response.setHeader('Content-Type', 'text/plain; charset=utf-8');
 
-  response.end(`requisição na url: ${url}`);
+  response.write(`URL: ${url} - Method: ${method}`);
+
+  response.end();
 })
 
 server.listen(PORT, 'localhost', () => {
