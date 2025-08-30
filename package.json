@@ -1,0 +1,18 @@
+{
+    "name" : "node-server",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node --watch server.js"
+               },
+    "keywords": ["node", "http", "server"],
+    "author": {
+        "name": "M2K Mobile Solutions",
+        "email": "m2kmobilesolutions@gmail.com"
+              },
+    "license": "ISC",
+    "description": "Um servidor HTTP simples em Node.js criado sala de aula no Curso Full Stack FS26 - Digital College Sul - Agosto 2025",
+    "dependencies": {
+        "http": "^0.0.1"
+    }
+}
